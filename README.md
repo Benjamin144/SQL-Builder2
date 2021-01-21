@@ -53,3 +53,21 @@ The MySQL server running on a command line terminal, Provides access to MySQL vi
 
 ## Running Scripts
 A series of sql commands in a text file, Allows us to script database operations, such as creating, populating, and updating databases, Put database commands in a .sql file, and run them using the mysql command line client
+
+## The MySQL Command Line
+A command line interface for MySQL, allows you to enter commands to do amongst other things; changing databases, showing tables and viewing table properties, eusenter your command at the mysql> prompt
+
+## Querying the database
+A way of reading or writing database contents from the command line, that allows us to manipulate database contents directly from within the mysql client app, Run the client app, connect to the mysql server, and issue commands at the 'mysql' prompt
+
+## SQL In Action 
+Introduction
+
+## SELECT
+A statement for querying data from a relational database. Retrieves data from a specified list of columns in a table. 
+SELECT column1, column2, ...
+        FROM table_name;
+
+## The Where Clause
+A command that allows the results of a SQL statement to be filtered, it restricts the scope of a SQL statement to only the rows that match the where clause, 
+In SELECT, UPDATE and DELETE statements, add a where clause that contains a boolean expression. Only rows where true are affected
