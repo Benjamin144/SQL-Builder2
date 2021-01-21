@@ -1,6 +1,6 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+Welcome Benjamin144,
 
 This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
@@ -43,3 +43,13 @@ We continually tweak and adjust this template to help give you the best experien
 --------
 
 Happy coding!
+
+## MySQL Introduction
+A free, open source relational database management system, MySQL's free availability and it's powerful features have resulted in it's widespread use as a database for websites, 
+The MySQL server runs as a service on most operating systems and can be used from the command line, through graphical clients, or directly from your own applications
+
+## MySQL on CLI
+The MySQL server running on a command line terminal, Provides access to MySQL via the command line in an IDE, Use the command line to run scripts; create, query, and update databases
+
+## Running Scripts
+A series of sql commands in a text file, Allows us to script database operations, such as creating, populating, and updating databases, Put database commands in a .sql file, and run them using the mysql command line client
