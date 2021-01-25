@@ -133,3 +133,79 @@ Get a count of all of the records in the `Customer` table
 where the customer's `FirstName` is "Frank"
 */
 SELECT COUNT(*) FROM Customer WHERE FirstName = 'Frank';
+
+/* The MIN Function - The min function looks at all of the values in a specified column and returns the minimum.
+*/
+SELECT MIN(LastName) FROM Customer;
+
+/* The MAX Function - Search the LastName column for the name that would be last if they were sorted alphabetically.
+*/
+SELECT MAX(LastName) FROM Customer;
+/* The AVG Function - Take the values in the Total column of the invoice table and average them.
+*/
+SELECT AVG(Total) FROM Invoice;
+/*The ROUND Function - Get the average of the total column in the invoice table.
+And round the result to two decimal places.
+*/
+SELECT ROUND(AVG(Total), 2) FROM Invoice;
+/*
+/*Use the sum function to get the total
+*/
+SELECT TOTAL FROM Invoice
+WHERE InvoiceId = 2;
+/*
+SELECT SUM(UnitPrice * Quantity) FROM InvoiceLine
+WHERE InvoiceId = 2;
+*/
+SELECT COUNT(*) FROM  Track
+GROUP BY AlbumId;
+
+SELECT AlbumId, COUNT(*) FROM Track
+GROUP BY AlbumId;
+
+SELECT Album.Title, COUNT(*) FROM Track
+INNER JOIN Album ON Track.AlbumId = Album.AlbumId
+GROUP BY Track.AlbumId;
+
+SELECT AlbumId, MIN(UnitPrice) FROM Track
+GROUP BY AlbumId;
+
+SELECT AlbumId, MAX(UnitPrice) FROM Track
+GROUP BY AlbumId;
+
+SELECT AlbumId, ROUND(SUM(UnitPrice), 2) FROM Track
+GROUP BY AlbumId;
+
+SELECT Album.Title, ROUND(SUM(UnitPrice), 2) FROM Track
+INNER JOIN Album ON Track.AlbumId = Album.AlbumId
+GROUP BY Track.AlbumId;
+/*
+/*
+Create a dummy `MediaType`
+*/
+INSERT INTO MediaType (Name)
+VALUES ("Test Media 1");
+
+/*
+Create a new `Album` record with a name of "Boy" and an
+ArtistId of 150. This ArtistId is for U2
+*/
+INSERT INTO Album (Title, ArtistId)
+VALUES ("Boy", 150);
+
+/*
+Get all of the relevant information that we need to enter all of
+tracks for U2's "Boy" album
+*/
+SELECT AlbumId FROM Album WHERE Title = "Boy";
+
+SELECT MediaTypeId FROM MediaType WHERE Name = "Protected AAC audio file";
+
+SELECT GenreId FROM Genre WHERE Name = "Rock";
+
+/*
+Use the above information to create the new tracks
+*/
+INSERT INTO Track (Name, AlbumId, MediaTypeId, GenreId, Composer, Milliseconds, Bytes, UnitPrice)
+VALUES ("I Will Follow", 348, 2, 1, "U2", 220000, 1234, 0.99);
+

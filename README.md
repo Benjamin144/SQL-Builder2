@@ -139,3 +139,39 @@ An SQL command to sort tables that sorts ascending or descending. We have to use
 
 ## The COUNT Function
 This is an aggregate function that returns the number of rows in a query result, or group we use the count(column) or count(*) for this to work.
+
+## The MIN Function
+An aggregate function that returns the 'minimvalue' from a specified column in a query result or group MIN(column) or MIN(expression)
+
+## The Max Function
+This is an aggregate function that returns the maximum value from a specified column in a query result or group. You can use MAX(column) or MAX(expression) for results.
+
+## The AVG Function
+An aggregate function returns the average value from a specified column in a query result or group as AVG(column) or AVG(expression)
+
+## The ROUND Function
+An aggregate function that returns a specified value, rounded to a specified number of decimal places as ROUND(column, precision) or ROUND(expression, precision)
+
+## The SUM Function
+An aggregate function, that returns the sum of the values of a specified column in a query result or group - SUM(column) or SUM(expression)
+
+## The GROUP BY Clause
+A clause that groups records in a query result, allowing aggregate functions to be applied to subsets of records within a result, rather than to all records
+& groups by a column or columns of repeating data
+
+## The Insert Statement
+This is a statement for adding new data to a relational database table, it Inserts specified values into specified columns of a table.
+The formula for achiving this is... INSERT INTO table_name (column1, column2, column3, ...)
+            VALUES (value1, value2, value3, ...);
+
+
+
+
+
+
+
+
+
+
+
+
