@@ -129,3 +129,13 @@ SELECT column1, column2, ...
 ## The Where Clause
 A command that allows the results of a SQL statement to be filtered, it restricts the scope of a SQL statement to only the rows that match the where clause, 
 In SELECT, UPDATE and DELETE statements, add a where clause that contains a boolean expression. Only rows where true are affected
+
+## JOIN
+A way of linking multiple tables together so that a SELECT can pull data from all of them. Identifies the columns that must match in order for two rows in different tables to be considered "related"
+In the FROM part of a SELECT statement, after naming a table to pull data from, then use the JOIN and ON keywords to link to another table
+
+## The ORDER BY Clause
+An SQL command to sort tables that sorts ascending or descending. We have to use the ORDER BY command.
+
+## The COUNT Function
+This is an aggregate function that returns the number of rows in a query result, or group we use the count(column) or count(*) for this to work.
